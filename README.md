@@ -104,7 +104,7 @@ pickle.dump(ft, output)
 
 #### Further Implementations
 
-Further automated and customizable feature engineering ensemble methods applications can be checked here: [Featransform Examples](https://github.com/TsLu1s/Featransform/examples)
+Further automated and customizable feature engineering ensemble methods applications can be checked here: [Featransform Examples](https://github.com/TsLu1s/Featransform/tree/main/examples)
 
 ## License
 
