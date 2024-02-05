@@ -47,9 +47,11 @@ pip install featransform
 In order to be able to apply the automated feature engineering `featransform` pipeline you need first to import the package. 
 The following needed step is to load a dataset and define your to be predicted target column name into the variable `target`.
 You can customize the `fit_engineering` method by altering the following running pipeline parameters:
-* validation_split: Division ratio in which the feature engineering methods will be evaluated within the loaded Dataset (range: [0.05, 0.45]).
-* optimize_iters: Number of iterations generated for backwards feature selection optimization.
 * configs: Nested dictionary in which are contained all methods specific parameters configurations. Feel free to customize each method as you see fit (customization example shown bellow);
+* optimize_iters: Number of iterations generated for backwards feature selection optimization.
+* validation_split: Division ratio in which the feature engineering methods will be evaluated within the loaded Dataset (range: [0.05, 0.45]).
+
+
 
 Relevant Note:
 * Although functional, `Featransform` pipeline is not optimized for big data purposes yet.
@@ -80,9 +82,9 @@ configs['DimensionalityReduction']['UMAP']['n_components'] = 6
 
 ## Fit Data
 
-ft = Featransform(validation_split = 0.30, # validation_split:float, optimize_iters:int
+ft = Featransform(configs = configs,        # validation_split:float, optimize_iters:int 
                   optimize_iters = 10,
-                  configs = configs)
+                  validation_split = 0.30) 
 
 ft.fit_engineering(X = train,              # X:pd.DataFrame, target:str="Target_Column"
                    target = "Target_Column_Name")
