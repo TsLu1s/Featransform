@@ -7,13 +7,6 @@ from datasets import load_dataset
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore', category=Warning)
-import sys
-sys.path.append('C:/Users/utilizador/Desktop/GitHub/env/Packages_Dev')
-#sys.path.append('C:/Users/luisf/OneDrive/Ambiente de Trabalho/GitHub/env/Packages_Dev')
-
-##########   Create folder packaging
-##########   Search more Anomaly detectors
-##########   Test elementarly each feat sel method
 
 ######################################################  Load Data
 
