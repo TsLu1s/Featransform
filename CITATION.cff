@@ -4,10 +4,10 @@ authors:
 - family-names: "Santos"
   given-names: "Luís"
   orcid: "https://orcid:0000-0002-4121-1133"
-title: "Atlantic - Automated Preprocessing Framework for Supervised Machine Learning"
-version: 1.0.11
+title: "Featransform - Automated Feature Engineering Framework for Supervised Machine Learning"
+version: 0.1.10
 doi: ""
-date-released: 2022-09-07
-url: "https://pypi.org/project/atlantic/"
+date-released: 2024-02-06
+url: "https://pypi.org/project/featransform/"
 
 
