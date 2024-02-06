@@ -1,12 +1,12 @@
 import numpy as np
 import pandas as pd
 from atlantic.analysis import Analysis
-from Featransform_dev.processor import AutoLabelEncoder, AutoIterativeImputer
-from Featransform_dev.anomalies import Anomaly_Engineering
-from Featransform_dev.clustering import Clustering_Engineering
-from Featransform_dev.dimensionality import PCAensemble
-from Featransform_dev.evaluator import Evaluation
-from Featransform_dev.parameters import configurations
+from featransform.processor import AutoLabelEncoder, AutoIterativeImputer
+from featransform.anomalies import Anomaly_Engineering
+from featransform.clustering import Clustering_Engineering
+from featransform.dimensionality import PCAensemble
+from featransform.evaluator import Evaluation
+from featransform.parameters import configurations
 
 sec_conf = configurations()
 

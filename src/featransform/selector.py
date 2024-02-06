@@ -1,6 +1,6 @@
 import pandas as pd
 from atlantic.analysis import Analysis
-from Featransform_dev.parameters import configurations
+from featransform.parameters import configurations
 from sklearn.preprocessing import LabelEncoder
 from catboost import CatBoostClassifier, CatBoostRegressor
 import xgboost as xgb

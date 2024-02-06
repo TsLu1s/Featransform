@@ -4,7 +4,7 @@ from sklearn.cluster import (DBSCAN,
                              Birch,
                              MiniBatchKMeans)
 from sklearn.mixture import GaussianMixture
-from Featransform_dev.parameters import configurations
+from featransform.parameters import configurations
 
 sec_conf = configurations()
 

@@ -1,6 +1,6 @@
-from Packages_Dev.Featransform_dev.processor import AutoLabelEncoder, AutoIterativeImputer
-from Featransform_dev.parameters import configurations
-from Featransform_dev.pipeline import Featransform
+from featransform.processor import AutoLabelEncoder, AutoIterativeImputer
+from featransform.parameters import configurations
+from featransform.pipeline import Featransform
 from atlantic.analysis import Analysis
 from sklearn.model_selection import train_test_split
 from datasets import load_dataset
@@ -17,10 +17,13 @@ sys.path.append('C:/Users/utilizador/Desktop/GitHub/env/Packages_Dev')
 
 ######################################################  Load Data
 
-data, target, prediction_type = load_dataset(dataset_selection='Titanic')
-# 'Faceit', 'Healthcare', 'Spotify', 'Titanic'
-# 'Textil', 'Cars_Prices', 'Fuel_Cars'
+#source_data="https://www.kaggle.com/datasets/surekharamireddy/fraudulent-claim-on-cars-physical-damage"
 
+url="https://raw.githubusercontent.com/TsLu1s/Atlantic/main/data/Fraudulent_Claim_Cars_class.csv"
+data = pd.read_csv(url) # Dataframe Loading Example
+
+target="fraud"
+data[target]=data[target].astype('category')
 ######################################################  Data Processing
 ####### Split Data
 

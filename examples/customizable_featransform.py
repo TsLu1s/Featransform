@@ -1,9 +1,9 @@
-from Packages_Dev.Featransform_dev.processor import AutoLabelEncoder, AutoIterativeImputer
-from Featransform_dev.clustering import Clustering_Engineering
-from Featransform_dev.anomalies import Anomaly_Engineering
-from Featransform_dev.dimensionality import PCAensemble
-from Featransform_dev.parameters import configurations
-from Featransform_dev.selector import Selector
+from featransform.processor import AutoLabelEncoder, AutoIterativeImputer
+from featransform.clustering import Clustering_Engineering
+from featransform.anomalies import Anomaly_Engineering
+from featransform.dimensionality import PCAensemble
+from featransform.parameters import configurations
+from featransform.selector import Selector
 from atlantic.analysis import Analysis
 from sklearn.model_selection import train_test_split
 import pandas as pd
@@ -14,11 +14,13 @@ warnings.filterwarnings('ignore', category=Warning)
 
 ######################################################  Load Data
 
-data, target, prediction_type = load_dataset(dataset_selection='Titanic')
-target = "Target_Column" # -> target feature name
+#source_data="https://www.kaggle.com/datasets/surekharamireddy/fraudulent-claim-on-cars-physical-damage"
 
-# 'Faceit', 'Healthcare', 'Spotify', 'Titanic'
-# 'Textil', 'Cars_Prices', 'Fuel_Cars'
+url="https://raw.githubusercontent.com/TsLu1s/Atlantic/main/data/Fraudulent_Claim_Cars_class.csv"
+data = pd.read_csv(url) # Dataframe Loading Example
+
+target="fraud"
+data[target]=data[target].astype('category')
 
 ############################################################################################################
 
