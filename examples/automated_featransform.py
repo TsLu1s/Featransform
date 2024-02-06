@@ -10,25 +10,25 @@ warnings.filterwarnings('ignore', category=Warning)
 
 ######################################################  Load Data
 
-#source_data="https://www.kaggle.com/datasets/surekharamireddy/fraudulent-claim-on-cars-physical-damage"
+# source_data = "https://www.kaggle.com/datasets/surekharamireddy/fraudulent-claim-on-cars-physical-damage"
 
 url="https://raw.githubusercontent.com/TsLu1s/Atlantic/main/data/Fraudulent_Claim_Cars_class.csv"
 data = pd.read_csv(url) # Dataframe Loading Example
 
 target="fraud"
 data[target]=data[target].astype('category')
-######################################################  Data Processing
-####### Split Data
+
+###################################################### 
 
 dp = Analysis(target=target)
 data.isna().sum()
 data.dtypes
 
-############################################################################################################
-
 train,test = train_test_split(data, train_size=0.8)
 train,test = train.reset_index(drop=True), test.reset_index(drop=True)
 train.isna().sum()
+
+######################################################
 
 configs = configurations()
 print(configs)
