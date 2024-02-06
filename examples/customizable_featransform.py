@@ -14,7 +14,7 @@ warnings.filterwarnings('ignore', category=Warning)
 
 ######################################################  Load Data
 
-#source_data="https://www.kaggle.com/datasets/surekharamireddy/fraudulent-claim-on-cars-physical-damage"
+# source_data = "https://www.kaggle.com/datasets/surekharamireddy/fraudulent-claim-on-cars-physical-damage"
 
 url="https://raw.githubusercontent.com/TsLu1s/Atlantic/main/data/Fraudulent_Claim_Cars_class.csv"
 data = pd.read_csv(url) # Dataframe Loading Example
@@ -22,7 +22,7 @@ data = pd.read_csv(url) # Dataframe Loading Example
 target="fraud"
 data[target]=data[target].astype('category')
 
-############################################################################################################
+######################################################
 
 # Drop null values from target column
 
@@ -40,7 +40,7 @@ train,test = train.reset_index(drop=True), test.reset_index(drop=True)
 train.isna().sum()
 train.dtypes
 
-############################################################
+######################################################
 ####### AutoIterativeImputer - Null Imputation
 
 if (train.isnull().sum().sum() or test.isnull().sum().sum()) != 0:
@@ -66,7 +66,7 @@ if len(cat_cols)>0:
     train = encoder.transform(X = train)
     test = encoder.transform(X = test)
 
-############################################################################################################
+######################################################
 ############ Customizable Feature Engineering 
 
 dp = Analysis(target = target)
@@ -147,21 +147,3 @@ selector = Selector(configs = configs)
 
 va_imp = selector.feature_selection(X = train_concat, 
                                     target = target)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
