@@ -5,7 +5,7 @@
   
 ## Framework Contextualization <a name = "ta"></a>
 
-The `Featransform` project constitutes an objective and integrated proposition to automate feature engineering through the integration of various approachs of input pattern recognition known in Machine Learning such as dimensionality reduction, anomaly detection, clustering approaches and datetime feature constrution. This package provides an ensemble of diverse applications of each specific approach, aggregating and generating them all as added feature engineered features based on the original input features. 
+The `Featransform` project constitutes an objective and integrated proposition to automate feature engineering through the integration of various approachs of input pattern recognition known in Machine Learning such as dimensionality reduction, anomaly detection, clustering approaches and datetime feature constrution. This package provides an ensemble of diverse applications of each specific approach, aggregating and generating them all as added engineered features based on the original input columns. 
 
 In order to avoid generation of noisy data for predictive consumption, after the engineered features ensemble are concatenated with the original features, a backwards wrapper feature selection also known as backward elimination is implemented to iteratively remove features based on evaluation of relevance, maintaining only valuable columns available for future models performance improvement purposes.
 
@@ -17,7 +17,7 @@ This project aims at providing the following application capabilities:
     
 * Improvement of predictive results: The application of the `Featransform` aims at improve the predictive performance of future applied Machine Learning models through added feature construction, increased pattern recognition and optimization of existing input features.
 
-* Continuos integration: After the train data is fitted, the created object can be saved and implemented in future data with the same structure. 
+* Continuous integration: After the train data is fitted, the created object can be saved and implemented in future data with the same structure. 
    
 #### Main Development Tools <a name = "pre1"></a>
 
