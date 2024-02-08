@@ -141,7 +141,7 @@ test_concat = pd.concat([test,feat_test],axis=1)
 ############ Feature Selection - Evaluate Feature Importance
 
 configs['FeatureSelection']['CatBoost']['iterations'] = 1000
-configs['FeatureSelection']['XGBoost']['iterations'] = 1000
+configs['FeatureSelection']['XGBoost']['n_estimators'] = 500
 
 selector = Selector(configs = configs)
 
