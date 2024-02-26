@@ -108,7 +108,7 @@ Further automated and customizable feature engineering ensemble methods applicat
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/TsLu1s/Featransform/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/TsLu1s/Featransform/tree/main/examples) for more information.
 
 ## Contact 
  
