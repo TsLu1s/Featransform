@@ -60,8 +60,8 @@ Relevant Note:
     
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from featransform.pipeline import Featransform
-from featransform.parameters import configurations
+from featransform.pipeline import (Featransform,
+                                   configurations)
 import warnings
 warnings.filterwarnings("ignore", category=Warning) # -> For a clean console
     
