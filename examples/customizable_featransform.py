@@ -1,9 +1,10 @@
-from featransform.processor import AutoLabelEncoder, AutoIterativeImputer
-from featransform.clustering import Clustering_Engineering
-from featransform.anomalies import Anomaly_Engineering
-from featransform.dimensionality import PCAensemble
-from featransform.parameters import configurations
-from featransform.selector import Selector
+from featransform.pipeline import (Anomaly_Engineering,
+                                   Clustering_Engineering,
+                                   PCAensemble,
+                                   Selector,
+                                   AutoLabelEncoder,
+                                   AutoIterativeImputer,
+                                   configurations)
 from atlantic.analysis import Analysis
 from sklearn.model_selection import train_test_split
 import pandas as pd
