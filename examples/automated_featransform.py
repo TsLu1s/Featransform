@@ -1,6 +1,7 @@
-from featransform.processor import AutoLabelEncoder, AutoIterativeImputer
-from featransform.parameters import configurations
-from featransform.pipeline import Featransform
+from featransform.pipeline import (Featransform,
+                                   AutoLabelEncoder, 
+                                   AutoIterativeImputer,
+                                   configurations)
 from atlantic.analysis import Analysis
 from sklearn.model_selection import train_test_split
 from datasets import load_dataset
