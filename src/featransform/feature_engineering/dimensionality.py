@@ -7,7 +7,7 @@ from sklearn.manifold import LocallyLinearEmbedding
 import os
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0' # Disable TensorFlow optimizations using OneDNN
 from umap import UMAP
-from featransform.parameters import configurations
+from featransform.configs.parameters import configurations
 
 # Load default configurations
 sec_conf = configurations()

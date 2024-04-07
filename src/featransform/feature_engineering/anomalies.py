@@ -3,7 +3,7 @@ from sklearn.ensemble import IsolationForest
 from sklearn.neighbors import LocalOutlierFactor
 from sklearn.svm import OneClassSVM
 from sklearn.covariance import EllipticEnvelope
-from featransform.parameters import configurations
+from featransform.configs.parameters import configurations
 
 sec_conf = configurations()
 

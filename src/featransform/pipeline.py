@@ -1,12 +1,13 @@
 import numpy as np
 import pandas as pd
 from atlantic.analysis import Analysis
-from featransform.processor import AutoLabelEncoder, AutoIterativeImputer
-from featransform.anomalies import Anomaly_Engineering
-from featransform.clustering import Clustering_Engineering
-from featransform.dimensionality import PCAensemble
-from featransform.evaluator import Evaluation
-from featransform.parameters import configurations
+from featransform.processing.processor import AutoLabelEncoder, AutoIterativeImputer
+from featransform.feature_engineering.anomalies import Anomaly_Engineering
+from featransform.feature_engineering.clustering import Clustering_Engineering
+from featransform.feature_engineering.dimensionality import PCAensemble
+from featransform.optimizer.evaluator import Evaluation
+from featransform.optimizer.selector import Selector
+from featransform.configs.parameters import configurations
 
 sec_conf = configurations()
 
@@ -219,7 +220,16 @@ class Featransform:
         return X_
     
 
-
+__all__ = [
+    'AutoLabelEncoder',
+    'AutoIterativeImputer',
+    'Anomaly_Engineering',
+    'Clustering_Engineering',
+    'PCAensemble',
+    'Evaluation',
+    'Selector',
+    'configurations'
+]
 
 
 

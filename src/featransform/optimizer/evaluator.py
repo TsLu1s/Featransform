@@ -1,7 +1,7 @@
 import pandas as pd
 from atlantic.analysis import Analysis 
-from featransform.selector import Selector
-from featransform.parameters import configurations
+from featransform.optimizer.selector import Selector
+from featransform.configs.parameters import configurations
 from sklearn.metrics import (mean_absolute_error,
                              mean_absolute_percentage_error,
                              mean_squared_error,
