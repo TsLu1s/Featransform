@@ -17,7 +17,7 @@ warnings.filterwarnings('ignore', category=Warning)
 
 # source_data = "https://www.kaggle.com/datasets/surekharamireddy/fraudulent-claim-on-cars-physical-damage"
 
-url="https://raw.githubusercontent.com/TsLu1s/Atlantic/main/data/Fraudulent_Claim_Cars_class.csv"
+url = "https://raw.githubusercontent.com/TsLu1s/Featransform/main/data/Fraudulent_Claim_Cars_class.csv"
 data = pd.read_csv(url) # Dataframe Loading Example
 
 target="fraud"
