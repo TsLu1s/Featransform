@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from atlantic.analysis import Analysis
+from atlantic.processing.analysis import Analysis
 from featransform.processing.processor import AutoLabelEncoder, AutoIterativeImputer
 from featransform.feature_engineering.anomalies import Anomaly_Engineering
 from featransform.feature_engineering.clustering import Clustering_Engineering
