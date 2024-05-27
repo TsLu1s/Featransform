@@ -1,5 +1,5 @@
 import pandas as pd
-from atlantic.analysis import Analysis 
+from atlantic.processing.analysis import Analysis 
 from featransform.optimizer.selector import Selector
 from featransform.configs.parameters import configurations
 from sklearn.metrics import (mean_absolute_error,
