@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <h2 align="center"> Featransform - Automated Feature Engineering Framework for Supervised Machine Learning
+  <h2 align="center"> Featransform: Automated Feature Engineering Framework for Supervised Machine Learning
   <br>
   
 ## Framework Contextualization <a name = "ta"></a>
