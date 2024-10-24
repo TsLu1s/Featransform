@@ -1,3 +1,23 @@
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Stargazers][stars-shield]][stars-url]
+[![MIT License][license-shield]][license-url]
+[![Downloads][downloads-shield]][downloads-url]
+[![Month Downloads][downloads-month-shield]][downloads-month-url]
+
+[contributors-shield]: https://img.shields.io/github/contributors/TsLu1s/Featransform.svg?style=for-the-badge&logo=github&logoColor=white
+[contributors-url]: https://github.com/TsLu1s/Featransform/graphs/contributors
+[stars-shield]: https://img.shields.io/github/stars/TsLu1s/Featransform.svg?style=for-the-badge&logo=github&logoColor=white
+[stars-url]: https://github.com/TsLu1s/Featransform/stargazers
+[license-shield]: https://img.shields.io/github/license/TsLu1s/Featransform.svg?style=for-the-badge&logo=opensource&logoColor=white
+[license-url]: https://github.com/TsLu1s/Featransform/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/luísfssantos/
+[downloads-shield]: https://static.pepy.tech/personalized-badge/featransform?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Total%20Downloads
+[downloads-url]: https://pepy.tech/project/featransform
+[downloads-month-shield]: https://static.pepy.tech/personalized-badge/featransform?period=month&units=international_system&left_color=grey&right_color=blue&left_text=Month%20Downloads
+[downloads-month-url]: https://pepy.tech/project/featransform
+
 <br>
 <p align="center">
   <h2 align="center"> Featransform: Automated Feature Engineering Framework for Supervised Machine Learning
